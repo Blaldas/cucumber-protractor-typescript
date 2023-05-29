@@ -1,0 +1,29 @@
+{
+  "name": "qa-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && protractor JSFILES\\configuration.js",
+    "cucumbertest": "tsc && protractor JSFILES\\cucumberConfig.js",
+    "pretest": "tsc",
+    "protractor": ".\\node_modules\\protractor\\built\\cli.js",
+    "webdriver-update": ".\\node_modules\\.bin\\webdriver-manager update"
+  },
+  "author": "Blaldas",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^9.1.1",
+    "@types/jasmine": "^4.3.1",
+    "@types/jasminewd2": "^2.0.10",
+    "@types/node": "^20.0.0",
+    "chai": "^4.3.7",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^6.0.7",
+    "jasmine": "^4.6.0",
+    "protractor": "^7.0.0",
+    "protractor-cucumber-framework": "9.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
