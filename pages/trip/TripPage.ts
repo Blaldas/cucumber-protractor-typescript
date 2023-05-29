@@ -61,7 +61,6 @@ export class FlightsPage {
             await this.adultTitleDropDown.click();
             await this.titleOption.click();
 
-
             await element(by.xpath(this.adultFirstNameInputXpath.replace(this.placeHolder, i.toString()))).sendKeys(await generateString(7));
             await element(by.xpath(this.adultSurnameNameInputXpath.replace(this.placeHolder, i.toString()))).sendKeys(await generateString(7));
         }

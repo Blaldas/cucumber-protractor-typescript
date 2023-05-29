@@ -9,7 +9,7 @@ import { ElementFinder, browser, by, element, ExpectedConditions as EC } from "p
 
 export async function clickByXpath(xpath: string, optNum: number = 0){
 
-    let el = element.all(by.xpath(xpath)).get(optNum);
+    const el = element.all(by.xpath(xpath)).get(optNum);
 
     await browser.wait(EC.visibilityOf(el), 1000); // Adjust the timeout value as needed
 

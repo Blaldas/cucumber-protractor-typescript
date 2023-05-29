@@ -106,9 +106,9 @@ export class FrontPage {
    * @param day 
    */
   async selectDate(year: number, month: number, day: number) {
-    let monthComplete: string = await getMonthName(month);
+    const monthComplete: string = await getMonthName(month);
     // console.log('monthComplete', monthComplete);
-    let monthStr: string = await monthComplete.substring(0, 3);
+    const monthStr: string = await monthComplete.substring(0, 3);
 
     // await this.selectMonth(monthStr, year);
 

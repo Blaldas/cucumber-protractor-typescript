@@ -9,7 +9,7 @@ import { PaymentPage } from "../pages/trip/Payment";
 
 Given('I search for a flight from {string} to {string} on {int}\\/{int}\\/{int} for {int} adults and {int} child', async function (from: string, to: string, day: number, month: number, year: number, nAdult: number, nChild: number) {
     // return 'pending';
-    let frontPage = await new FrontPage();
+    const frontPage = await new FrontPage();
     //selects one way trip
     await frontPage.clickOnOneWayTrip();
     //selects from and to
