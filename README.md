@@ -1,6 +1,6 @@
 # cucumber-protractor-typescript
 ## Project Architecture
-This project creates a test suit using typescript, cucumber and protrator as the main frameworks.
+This project creates a test suite using typescript, cucumber and protrator as the main frameworks.
 Since cucumber is not directly compatible with typescript, it runs the resulting javascript files.
 The project uses an page-object architecture, where each page has its own class with its own specific methods.
 
